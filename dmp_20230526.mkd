@@ -1,0 +1,100 @@
+# Data management plan for TPChange
+
+# 1. Administrative data
+|   |   |
+|---|---|
+|Funding Agency	 |    DFG|
+|Grant Reference Number	|SFB/TRR 301|
+|Project Name	|The Tropopause in a changing atmopshere|
+|Project Description	| See <https://tpchange.de> |
+|PIs	|  See <https://tpchange.de>|
+|Project Data Contact	|Daniel Kunkel  (<dkunkel@uni-mainz.de>)|
+|Date of First Version 	|to be filled |
+|Date of Last Update	|to be filled |
+|Related Policies	| [DFG Leitlinie zum Umgang mit Forschungsdaten](https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf)|
+| |[DFG Leitlinien zur Sicherung guter wissenschaftlicher Praxis](https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/kodex_gwp.pdf)|
+
+# 2. Data collection
+
+## 2.1 Sources
+
+TPChange is project at the interface of experimental and theoretical meteoreology. Data within the project covers products from laboratory and field experiments as well as model output of varying complexity. Third-party data from reanalysis data as well as observational data is essential in various proejcts within TPChange. 
+
+Data also comprises program code which is used or which is created which is as essential as the data itself and thus requires to be versionized and eventually published in case of being used for publications. 
+
+To clarify the terminology of data within this plan, the following differentiation is made:
+
+| Type | Description |
+|------|-------------|
+|External data| Such data is created by third-parties and is available to be used in TPChange. Data sources are known and documented. If possible this data is centrally collected to be easily available for the members of TPChange and to ensure preservation in case the data is used for publications.  |
+|Internal data| This data is created by members of TPChange within the projects of TPChange. Such data can comprise output from model experiments as well as results from laboratory and field experiments. In particular, the data from field experiements are crucial data, since they can not easily be reproduced. |
+|External code| Program source code provided by third-parties, e.g. code from models such as ICON or MESSy. A second source of such code is proprietary code associated with technical equipment, e.g., for conversion of a measurement signal to atmospherically relevant quantities. A third source of external code is code retrieved from publically available repositories, e.g., GitHub which is used to process data of any kind. |
+|Internal code| Source code which is created within the projects of TPChange, independently whether it is model, processing or analysis code.|
+
+## 2.2 Formats
+
+The interchangeability and easy usage of data is achieved through common data types and
+formats as well as a comprehensible data structure. Data is preferably stored in the self-
+describing format [netCDF](https://www.unidata.ucar.edu/software/netcdf/) where possible since netCDF is well-established within the meteorological community and supported by numerous software tools. Interfaces exist in particular for programming language such as Fortran and C/C++/C# as well as for interpreted languages such as python and julia. These interfaces are open sources and allow to read and write data which in turn allows for long-term accessibility.
+
+Alternatively, text files like software code or data from laboratory and field experiemnts should be used and encoded using UTF8 to ensure portability. Text files from model code and model setups as well as results should be version controlled to make analyses transparent and allow repetition of experiments. 
+
+## 2.3 Structure 
+
+### 2.3.1 Centrally stored data
+Within TPChange there are external and internal data sets which are hosted centrally by the projects Z1, Z2, and Z3. This includes data from the field campaign (see project Z01), reanalysis data  (Z02) and model input data (Z03, TO BE CLARIFIED). More so, data is included in this list which is of importance to several projects, e.g., data from the IAGOS database. In detail, centrally stored data is available as follows:
+
+|Data|Location| Original source |Contact |
+|---|--| --| --|
+|TPChange campaign | tba (campaign will take place in summer 2023)| |Z01 PI (to be filled) |
+|IAGOS (CORE, MOZAIC, CARIBIC)|  mogon      | [http://iagos-data.fr/](http://iagos-data.fr/)|[Daniel Kunkel](mailto:dkunkel@uni-mainz.de)|
+| ECMWF ERA5 reanalysis data | mogon | [www.ecmwf.int](https://apps.ecmwf.int/data-catalogues/era5/?class=ea), [EC Wiki](https://confluence.ecmwf.int/display/CKB/ERA5)|  [Daniel Kunkel](mailto:dkunkel@uni-mainz.de)|
+| MESSy input data | TBC | TBC | TBC |
+
+The centrally stored data will be hosted by the associated contact person. This person is also responsible for meta data availability and potential backup/storage of the data, in particular in case the data is classified as internal data and can not be reproduced from external sources.
+
+**Note:** data will be available on Mogon as well as on the TPChange server. The detailed data availability plan needs still to be implemented.
+
+
+### 2.3.2 Project specific data
+Within the individual projects other internal and external data will be created or used. This data should be described in the porject specific data management plan. More so, the project members are responsible to create meta-data information, versionize data if possible, and store essential data for eventual re-creation of the data.
+
+### 2.3.3 Data availability 
+
+Centrally stored data will be available on MOGON as well as on the TPChange server. The data on the TPChange server is required to be stored in iRODS to allow for quick recovery. The reanalysis data with its more than 200 TB of data is not stored in iRODS but can be recovered from its original source.
+
+## 2.4 Data life cycle
+
+## 2.5 Version control of source code
+
+A central aspect of the data management is to provide a version control software. Such a tool allows to track and provides control over changes to any type of source code which will be created and or used within each project. We will use the state-of-the-art version control system [Git](https://git-scm.org) to establish a central code repository. Git will be used due to its distributed character, its ease of use and the fact that a web-based graphical user interface using Gitlab is already hosted at the Data Centre of the [JGU](https://gitlab.rlp.net). Our Gitlab will be used to share externally developed software, such as the weather model ICON (see also project Z03) as well as all internally developed software code or programme libraries. A common software repository will significantly increase the credibility and reproducibility of scientific results and simplifies re-use of individual members’ developments. Source code can then also be made available to the public using code sharing platforms, e.g., [Github](https://github.com/). The outcome of TPChange will be made available in a group, which further allows to gain maximum visibility. Additionally, persistent identifiers (e.g., digital object identifier - DOI) can be added to the repositories using OpenData services like Zenodo or comparable platforms. 
+
+Zenodo is a publicly available data centre hosted at CERN which provides a DOI along with stored data, thus
+making the data citable. More so, the data is directly accessible after publication and also version controlled.
+Generally, users, i.e., project partners within the CRC will be supported through training courses on how to best
+use Git as well as on documenting and publishing code. The support will be provided through on-site and digital
+classes as well as through a communication platform which is linked to the Gitlab instance of the ZDV, also
+allowing for interactive digital meetings using BigBlueButton. The ZDV already provides support for Gitlab on
+mattermost. Training courses will be held specifically for project members in the first months of the CRC.
+
+Currently, data can is shared and published at the following instances:
+
+|Data type |URL| DOI available | Contact |
+|---|--| --| --|
+
+# 3. Data documentation and metadata
+
+## 3.1  Data documentation
+Metadata and data documentation are essential when storing data. A self-describing data format will already contain the most important metadata. Furthermore, within the iRODS data archive additional metadata is defined to comprehensively document stored data sets. For data sets from model simulations or laboratory and field experiments the owner is required to add additional information in human readable files, e.g., read-me files in markdown format. The collected information should contain everything needed to repeat any kind of experiments from the initial setup to the final output
+following the DFG guidelines on good scientific practice.
+
+## 3.2 Mandatory metadata
+
+# 4. Data storage, backup and preservation
+
+# 5. Data sharing and restrictions
+
+# 6. Responsibilities and resources
+
+# 7. Ethics and legal compliance
+
