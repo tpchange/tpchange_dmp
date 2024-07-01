@@ -46,9 +46,10 @@ Within TPChange there are external and internal data sets which are hosted centr
 
 |Data|Location| Original source |Contact |
 |---|--| --| --|
-|TPChange campaign | tba (campaign will take place in summer 2023)| |Z01 PI (to be filled) |
+|TPChange campaign TPEx | seafile | not yet available | [Heiko Bozem]{mailto:bozemh@uni-mainz.de}, [Peter Hoor]{mailto:hoor@uni-mainz.de} |
 |IAGOS (CORE, MOZAIC, CARIBIC)|  mogon      | [http://iagos-data.fr/](http://iagos-data.fr/)|[Daniel Kunkel](mailto:dkunkel@uni-mainz.de)|
 | ECMWF ERA5 reanalysis data | mogon | [www.ecmwf.int](https://apps.ecmwf.int/data-catalogues/era5/?class=ea), [EC Wiki](https://confluence.ecmwf.int/display/CKB/ERA5)|  [Daniel Kunkel](mailto:dkunkel@uni-mainz.de)|
+| Z01 data product | seafile/tpcdata | various sources | [Hans-Christoph Lachnitt](mailto:lachnit@uni-mainz.de) | 
 | MESSy input data | TBC | TBC | TBC |
 
 The centrally stored data will be hosted by the associated contact person. This person is also responsible for meta data availability and potential backup/storage of the data, in particular in case the data is classified as internal data and can not be reproduced from external sources.
