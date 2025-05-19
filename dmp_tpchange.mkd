@@ -90,12 +90,82 @@ Metadata and data documentation are essential when storing data. A self-describi
 following the DFG guidelines on good scientific practice.
 
 ## 3.2 Mandatory metadata
+The most important metadata are collected within the actual data files using a self-describing format. In addition to that, the CERA2 standard is used for the definition of mandatory information. These metadata are required when datasets are stored within the iRODS archive:  
+
+|Attribute |	Description |
+| ---------| -------------- |
+|Entry Name| 	A name that ensures unique identification. The combination of Project + Experiment + Dataset-Group must be unique, individual parts may not be unique.|
+|Summary   |	Short Summary, external links or references are allowed. |
+|Keywords  | A list of keywords that helps others to find the dataset. One of those should be “TPChange (CRC/TRR 301)”. |
+|Authors   |	The main researchers involved in producing the data, or the authors of a data publication. |
+|Investigator | 	Responsible contact person for the data in question. |
+|Metadata 	|Person responsible for the metadata if different from the investigator. |
+|Data Description |	The data format as well as additional information about the data if none of the formats netCDF or GRIB are used.|
+|License |	Mandatory for external data. Includes information of whether a dataset may be (re-) shared or made available to the public.|
+
+ Optional Information include temporal and spatial coverage as well as the quality control procedure. 
+
 
 # 4. Data storage, backup and preservation
 
 # 5. Data sharing and restrictions
 
+## 5.1 Potential targets for sharing
+Data created and collected within the project is of interest for (a) readers of TPChange publications, (b) members of TPChange for collaboration, and (c) for future members of TPChange in a possible second and third phase.
+
+## 5.2 Search methods
+
+Readers of publications will find data by means of persistent identifiers (e.g., DOIs).  DOIs or other persistent identifiers are not used for internal data and code, unless it has been published. Within the project data can be shared via the TPChange server or on the HPC systems (DKRZ, MOGON).
+
+## 5.3 Restrictions
+
+|Data Type |	Restrictions|
+| ---------| ---------------|
+|External Data |	In general, external data are provided by third-parties and shared by them. We do not re-share their data, unless we have explicit permission to do so and the third-party is not sharing the data (e.g., because it has not been archived). |
+|Internal Data |	Data created within TPChange are shared for scientific purposes to make experiments repeatable. This is done when license agreements for (input or experimental) data and code permit it. Unless otherwise required, we recommend data publications under one of the creative common licenses.|
+|External Code |	Like data, code is shared by the third-parties who own it. For closed-source code, this usually involves signing a license agreement with the code owner. External code is not re-shared, unless it is open source and the license permits it.|
+|Internal Code |	Program libraries or other software projects created within TPChange are made available to the public as GIT repository by using code sharing platforms like github.com and gitlab instances (e.g., at JGU or at DKRZ). To gain maximal visibility, repositories are organized in a group called “tpchange”. In addition, persistent identifiers (e.g., DOIs) are obtained from open access code publishing services like Zenodo. Usage of an open-source-license that ensures reproduction of the copyright noticed is recommended (e.g., MIT14). Code that is not published for its own sake, but in support of a publication (e.g., scripts for plots or Jupyter Notebooks), can be published without a repository only on a platform like Zenodo or as supplementary material at the journal. Scientists are encouraged to do so, but without a strict requirement.|
+
+As outlined above, restrictions are required wherever license agreements for data produced by external partners are in place. During the process of collecting data from third-parties, we will already ask for permission to share derived results to minimize restrictions.
+
+In general external data and code are not exclusively available to TPChange. For internally create data and code exclusive access is only required before the publication of scientific results. For all publications regardless of the form, a clear attribution to the project should be possible.
+
 # 6. Responsibilities and resources
 
+## 6.1 Assignment of Responsibilities
+
+The data management plan is created by the Z2 project and reviewed by the steering group. Revised versions are created in the same way. Responsibility for the technical implementation lies with the Z2 members.
+ 
+| Activity |	Responsibility|
+| ---------| -----------------|
+|Data Collection|  	 |
+| *  External Data |	In general, data is centrally collected by Z2 staff. Data collected by project members is included and checked by Z2 staff before sharing within the project.|
+| * Internal Data  | Data will be collected by project scientists. Where necessary, with support of Z2 staff. Project scientists are responsible for metadata and documentation.|
+| * External Code 	Will be centrally collected by Z2 staff (e.g., ICON and COSMO), but also by project scientists.
+| * Internal Code 	Will be collected by project scientists. Where necessary, with support of Z2 staff.
+|Metadata 	| |
+| * Production |	The same responsibility as for the data itself.|
+| * Control  |	Quality control (e.g., completeness) is done by Z2 staff. A technical solution, which automatically checks availability of mandatory information, should be implemented. |
+|Data Quality| 	The same responsibility as for the data itself. For external data we rely on quality-control mechanisms of our third-party partners.|
+|Storage and Backup| 	The PIs of Z02 coordinate the provision of the actual disk space on the TPChange server. Space on MOGONII/-NHR is provided by the PIs of Z03. Backups of code and data lies in the responsibility of the project PIs and project scientists.|
+|Archiving and Sharing |	Individual project scientists with technical support of PIs of Z02.|
+
+It is the responsibility of project PIs to ensure that project scientists respect the policies outlined in this document. PIs can ask for technical support from Z2 staff.
+
 # 7. Ethics and legal compliance
+
+## 7.1 Ethics
+
+No person-related data are collected. Thus, no ethical issues are expected.
+
+## 7.2 Legal compliance
+
+Not all data are owned by the project or project members. To ensure intellectual property rights, the following rules are applied depending on the type of data:
+
+|Type |	Regulation|
+| ----| ----------|
+|External data |	Data provided by third-parties remain in possession of third-parties and may only be published with their permission. Whether this permission is given is stored as a mandatory attribute of each external dataset.|
+|Internal data |	These data are freely reusable within the consortium. For publication a license has to be added. Internal data may not be shared outside of TPChange if it is derived from an external dataset where publication of derived results is not permitted by the data provider.|
+|External code |	External source code may only be used in agreement with existing license agreements. Sharing or publication of external source code is only allowed in cases where the license explicitly permits it.|
+|Internal code |	Source code produced by members of TPChange is intended for publication along with papers using or describing the code. |
 
