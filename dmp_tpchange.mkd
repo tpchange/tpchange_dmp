@@ -42,7 +42,7 @@ Alternatively, text files like software code or data from laboratory and field e
 ## 2.3 Structure 
 
 ### 2.3.1 Centrally stored data
-Within TPChange there are external and internal data sets which are hosted centrally by the projects Z1, Z2, and Z3. This includes data from the field campaign (see project Z01), reanalysis data  (Z02) and model input data (Z03, TO BE CLARIFIED). More so, data is included in this list which is of importance to several projects, e.g., data from the IAGOS database. In detail, centrally stored data is available as follows:
+Within TPChange there are external and internal data sets which are hosted centrally by the projects Z1, Z2, and Z3. This includes data from the field campaign (see project Z01), reanalysis data  (Z02) and model input data (Z03). More so, data is included in this list which is of importance to several projects, e.g., data from the IAGOS database. In detail, centrally stored data is available as follows:
 
 Centrally stored data is listed in the document: TRR301_central_data_sets.md 
 
@@ -96,7 +96,7 @@ Metadata and data documentation are essential when storing data. A self-describi
 following the DFG guidelines on good scientific practice.
 
 ## 3.2 Mandatory metadata
-The most important metadata are collected within the actual data files using a self-describing format. In addition to that, the CERA2 standard is used for the definition of mandatory information. These metadata are required when datasets are stored within the iRODS archive:  
+The most important metadata are collected within the actual data files using a self-describing format. The following metadata are required when datasets are stored within the iRODS archive:  
 
 |Attribute |	Description |
 | ---------| -------------- |
