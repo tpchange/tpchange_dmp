@@ -1,6 +1,6 @@
 #### TPChange data sets
 
-**as of: 2025-06-03**
+**as of: 2025-08-22**
 *last editor: dkunkel*
 
 | Field              | Description                                                          |
@@ -15,32 +15,38 @@
 | version            | if applicable, version number of data set                            |
 | contact            | contact person                                                       |
 
-| project ID | shortname | type | format | coverage | owner/source | retrieval/creation | version | contact |
-| ---------- | --------- | ---- | ------ | -------- | ------------ | ------------------ | ------- | ------- |
-| A01        |           |      |        |          |              |                    |         |         |
-| A02        |           |      |        |          |              |                    |         |         |
-| A03        |           |      |        |          |              |                    |         |         |
-| A04        |           |      |        |          |              |                    |         |         |
-| A05        |           |      |        |          |              |                    |         |         |
-| A06        |           |      |        |          |              |                    |         |         |
-| A07        |           |      |        |          |              |                    |         |         |
-|            |           |      |        |          |              |                    |         |         |
-| B01        |           |      |        |          |              |                    |         |         |
-| B02        |           |      |        |          |              |                    |         |         |
-| B03        |           |      |        |          |              |                    |         |         |
-| B04        |           |      |        |          |              |                    |         |         |
-| B06        |           |      |        |          |              |                    |         |         |
-| B07        |           |      |        |          |              |                    |         |         |
-| B08        |           |      |        |          |              |                    |         |         |
-|            |           |      |        |          |              |                    |         |         |
-| C01        |           |      |        |          |              |                    |         |         |
-| C02        |           |      |        |          |              |                    |         |         |
-| C03        |           |      |        |          |              |                    |         |         |
-| C04        |           |      |        |          |              |                    |         |         |
-| C05        |           |      |        |          |              |                    |         |         |
-| C06        |           |      |        |          |              |                    |         |         |
-| C07        |           |      |        |          |              |                    |         |         |
-|            |           |      |        |          |              |                    |         |         |
-| Z01        |           |      |        |          |              |                    |         |         |
-| Z02        |           |      |        |          |              |                    |         |         |
-| Z03        |           |      |        |          |              |                    |         |         |
+| project ID | shortname | type | format | coverage | owner/source | retrieval/creation | version | contact | additional information |
+| ---------- | --------- | ---- | ------ | -------- | ------------ | ------------------ | ------- | ------- | ---------------------- |
+| A01        |           |      |        |          |              |                    |         |         | |
+| A02        |           |      |        |          |              |                    |         |         | |
+| A03        |           |      |        |          |              |                    |         |         | |
+| A04        |           |      |        |          |              |                    |         |         | |
+| A05        |           |      |        |          |              |                    |         |         | |
+| A06        |           |      |        |          |              |                    |         |         | |
+| A07        |           |      |        |          |              |                    |         |         | |
+|            |           |      |        |          |              |                    |         |         | |
+| B01        |           |      |        |          |              |                    |         |         | |
+| B02        |           |      |        |          |              |                    |         |         | |
+| B03        |           |      |        |          |              |                    |         |         | |
+| B04        |           |      |        |          |              |                    |         |         | |
+| B06        |           |      |        |          |              |                    |         |         | |
+| B07        |           |      |        |          |              |                    |         |         | |
+| B08        |           |      |        |          |              |                    |         |         | |
+|            |           |      |        |          |              |                    |         |         | |
+| C01        |           |      |        |          |              |                    |         |         | |
+| C02        |           |      |        |          |              |                    |         |         | |
+| C03        |  ERA5 with low temp bias (ERA5.1)         | reanalysis     | netCDF   | 1979-2025, global  |  [ERA5](https://doi.org/10.24381/cds.143582cf), [ERA5.1](https://doi.org/10.24381/cds.143582cf) | unknown | ERA5.1 | [Katharina Turhal](k.turhal@fz-juelich.de) | |
+| C03        |  ERA-Interim   | reanalysis     | netCDF   | 1979-2018, global  |  [ERA-Interim](https://doi.org/10.24381/cds.f2f5241d) | unknown | - | [Katharina Turhal](k.turhal@fz-juelich.de) | |
+| C03        |  JRA55         | reanalysis     | netCDF   | 1979-2019, global  |  [JRA55](https://doi.org/10.5065/D6HH6H41) | unknown | - | [Katharina Turhal](k.turhal@fz-juelich.de) | |
+| C03        |  MERRA2        | reanalysis     | netCDF   | 1980-2025, global  |  [MERRA2](https://doi.org/10.5067/WWQSXQ8IVFW8) | unknown | - | [Katharina Turhal](k.turhal@fz-juelich.de) | |
+| C03        |  Eddy Tracking Tool       | software     | python   | - |  FZJ, ICE-4, Jan Clemens | initial creation 2021-01-08 | 2024-08-06 | [Katharina Turhal](k.turhal@fz-juelich.de) | A modular toolkit to define, detect and track atmospheric structures (streamer, eddies, transport barriers) in reanalysis and model data. |
+| C03        |  QBO Dataset   | data     | tab-serparated values (ascii)   | 1948-2023 |  [FU Berlin](https://www.geo.fu-berlin.de/en/met/ag/strat/produkte/qbo/index.html#references) | 2023-04-12 | NA | [Katharina Turhal](k.turhal@fz-juelich.de) |  |
+| C03        |  PV tropopause | data     | netCDF   | 1980-2017, monthly data, isentropic levels | FZJ, project C03 | initial creation 2024-01-18, [zenodo](https://doi.org/10.5281/zenodo.10529153) | v1 | [Katharina Turhal](k.turhal@fz-juelich.de) | Associated with a [publication](https://doi.org/10.5194/acp-24-13653-2024)  |
+| C04        |           |      |        |          |              |                    |         |         | |
+| C05        |           |      |        |          |              |                    |         |         | |
+| C06        |           |      |        |          |              |                    |         |         | |
+| C07        |           |      |        |          |              |                    |         |         | |
+|            |           |      |        |          |              |                    |         |         | |
+| Z01        |           |      |        |          |              |                    |         |         | |
+| Z02        |           |      |        |          |              |                    |         |         | |
+| Z03        |           |      |        |          |              |                    |         |         | |
