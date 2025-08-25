@@ -26,7 +26,8 @@
 | A06        |           |      |        |          |              |                    |         |         | |
 | A07        |           |      |        |          |              |                    |         |         | |
 |            |           |      |        |          |              |                    |         |         | |
-| B01        | MECO(n) TPex | mod data | netCDF | 2024/06/01-2024/06/24 | TPex area | JGU-IPA, MOGON2 | 2024/12 | NA | [Chun Hang Chau](cchau@uni-mainz.de) | It is a high vertical resolution simulation in the multi-scale model MECOn, with high horizontal resolution covering the restricted flight area. |
+| B01        | MECO(n) TPex | mod data | netCDF | 2024/06/01-2024/06/24 , TPex area | JGU-IPA, MOGON2 | 2024/12 | NA | [Chun Hang Chau](cchau@uni-mainz.de) | It is a high vertical resolution simulation in the multi-scale model MECOn, with high horizontal resolution covering the restricted flight area. | |
+| B01        | TPEx 2024-F07-LAGRANTO-10days-trajectories | mod data | netCDF | 2024/06/17, TPex area | JGU-IPA, [zenodo](https://doi.org/10.5281/zenodo.16262949) | 2025/07/21 | v1 | [Annette Miltenberger](amiltenb@uni-mainz.de) | | 
 | B02        | BISTUM23 Balloon   | obs. data  | ascii (csv)   | 2023/08/04-2023/08/17, Tailfingen, Germany | JGU-IPA, [gitlab](https://gitlab.rlp.net/tpchange/research-area-b/b02/balloncampaign_2023) | 2023/03/21 | final | [Luis Valero Tuya](luistuya@uni-mainz.de) | |
 | B02        | BISTUM24 Balloon   | obs. data  | ascii (csv)   | 2024/06/07-2024/06/21, Spielberg, Germany | JGU-IPA, N/A | 2024/08/03 | preliminary | [Luis Valero Tuya](luistuya@uni-mainz.de) | |
 | B02        | BISTUM23_MoLa | obs. data | ascii | 2023/08/01-2023/08/18, Taiflingen, Germany | MPIC, [zenodo](https://doi.org/10.5281/zenodo.14748149)   |  2024/08/18 |  final, v1 |  [Lasse Moormann](lasse.moormann@mpic.de)  | Associated with a publication: [Moormann et al. 2024](https://amt.copernicus.org/articles/18/1441/2025/)  |
@@ -54,6 +55,6 @@
 | C06        |           |      |        |          |              |                    |         |         | |
 | C07        |           |      |        |          |              |                    |         |         | |
 |            |           |      |        |          |              |                    |         |         | |
-| Z01        |           |      |        |          |              |                    |         |         | |
+| Z01        |  TPEx - Merged data set  | obs./mod. data   | netCDF  | 2024/06/10-2024/06/21 , TPex area | [zenodo](https://doi.org/10.5281/zenodo.15371527) | 2025/05/09 | v1  | [Hans-Christoph Lachnitt](hlachnit@uni-mainz.de) | |
 | Z02        |           |      |        |          |              |                    |         |         | |
 | Z03        |           |      |        |          |              |                    |         |         | |
