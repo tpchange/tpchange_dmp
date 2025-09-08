@@ -44,7 +44,8 @@
 | B07        | Homo. Ice Nuc  | model, software  | netCDF, python  | various         | [zenodo](10.5281/zenodo.13819510)     | 2024-09-20  | v1.0   | [Alena Kosareva](kosareva@iau.uni-frankfurt.de)  | Associated with publication [Kosareva et a., 2025](https://doi.org/10.5194/gmd-2024-193) |
 | B08        | WSB ascent times |mod. data, software  | netCDF, python, julia, shell | 2017/09/23, North Atlantic | JGU-IPA, [zenodo](https://doi.org/10.5281/zenodo.14924689), [github](https://github.com/CornelisSchwenk/wcb-ascent-timescales])            | 2024-10-10 (initial release) | v2 | [Cornelis Schwenk](c.schwenk@uni-mainz.de) | Associated with [Schwenk et al., 2024](https://doi.org/10.5194/acp-24-14073-2024) |
 |            |           |      |        |          |              |                    |         |         | |
-| C01        |           |      |        |          |              |                    |         |         | |
+| C01        | IAGOS WV  | obs. data | netCDF | 1996-2022 | FZJ, [zenodo](https://doi.org/10.5281/zenodo.14852197)              | 2025-02-11 | v1 | [Patrick Konjari](p.konjari@fz-juelich.de)| Associated with [Konjari et al., 2025](https://doi.org/10.5194/acp-25-4269-2025) |
+
 | C02        | GUF AirCore Data | obs. data | NASA ICAART | since 2022/09, bi-monthly | GUF, [zenodo](https://doi.org/10.5281/zenodo.15274043)  | ongoing since 2022/09 | v1 (zenodo)  | [Johannes Degen](degen@iau.uni-frankfurt.de) | Associated with [Degen et al. (2025)](https://doi.org/10.5194/egusphere-2025-2648) |
 | C02        | NOAA AirCore Data | obs. data | NASA ICAART | 2012-2023 | [GML](https://doi.org/10.15138/6AV0-MY81)  | 2024-08-21 | v20230831  | [Johannes Degen](degen@iau.uni-frankfurt.de) | |
 | C02        | EMAC AirCore data | mod. data | netCDF | 1998/01-2024/06, global, 12min sampling | [DKRZ Levante (internal)](/work/bd1305/b309210/4Degen/TPC1SD-2_s4d_AirCore.tar)  | 2024/12 | v202410 | [Johannes Degen](degen@iau.uni-frankfurt.de) | EMAC TPChange specified-dynamics run|
@@ -61,7 +62,7 @@
 | C05        | ERA5 | reanalysis | netCDF | 1959-2022; 1hPa-1000 hPa, 1.5° res. | [CDS store](https://cds.climate.copernicus.eu) | NA | NA | [Frederik Harzer](frederik.harzer@physik.lmu.de) | Associated with [Harzer et al., 2023](https://doi.org/10.5194/acp-23-10661-2023)|
 | C05        | ERA-Interim | reanalysis | netCDF | 1979-2016; 1hPa-1000 hPa, 0.7° res., zonal mean | [CDS store](https://cds.climate.copernicus.eu), NCAR data store | NA | NA | [Frederik Harzer](frederik.harzer@physik.lmu.de) | Associated with [Harzer et al., 2023](https://doi.org/10.5194/acp-23-10661-2023)|
 | C05        | LMS mass  | data | netCDF, software| 1979-2019, global | JGU-IPA, [zenodo](https://doi.org/10.5281/zenodo.13890232) | 2024-10-04 | v1 | [Franziska Weyland](franziska.weyland@uni-mainz.de) | Associated with [Weyland et al., 2025](https://doi.org/10.5194/egusphere-2024-1700)| 
-| C06        |           |      |        |          |              |                    |         |         | |
+| C06        | CAFE-BRAZIL tra  | mod. data, sat. data     | json | 2022/12/04-2023/01/28, Manaus, Brazil   | GUF, [zenodo](https://doi.org/10.5281/zenodo.8316742)  | 2023-05-08 | v1.1         | [Lianet Hernandez Pardo](HernandezPardo@iau.uni-frankfurt.de)        | |
 | C07        |            |      |        |          |              |                    |         |         | |
 |            |           |      |        |          |              |                    |         |         | |
 | Z01        |  TPEx - Merged data set  | obs./mod. data   | netCDF  | 2024/06/10-2024/06/21 , TPex area | [zenodo](https://doi.org/10.5281/zenodo.15371527) | 2025/05/09 | v1  | [Hans-Christoph Lachnitt](hlachnit@uni-mainz.de) | |
