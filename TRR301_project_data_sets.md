@@ -22,7 +22,7 @@
 | A03        | TPex mc-CPC data | obs data | NASA AMES | 2024/06/07-2024/06/20; 0-12 km alt.; Northern Germany, Southern Scandinavia | GUF, [seafile](https://seafile.rlp.net/d/fbb87dcfe42e43cf9f45) | creation: 2024/10/17 | v1, preliminary | [Sarah Richter](richter@iau.uni-frankfurt.de) | part of TPex merged data set on [zenodo](https://doi.org/10.5281/zenodo.15371527) |
 | A04        | ACCLIP ERICA-AMS          | obs. data     | NASA ICAART       | 2022/08/04- 2022/08/31; 0-16 km alt.; 124°E-150°W & 15°N-61.5°N  | MPIC, [public](https://doi.org/10.26023/T7RT-01YD-A110) | creation: 2023-03-22  | v1 | [Oliver Eppers](o.eppers@mpic.de)  |ERICA-AMS in-situ data obtained from the [Asian Summer Monsoon Chemical & CLimate Impact Project (ACCLIP) mission](https://www.eol.ucar.edu/field_projects/acclip) |
 | A04        | ACCLIP ERICA-LAMS          | obs. data     | NASA ICAART       | 2022/07/31- 2022/08/31; 0-16 km alt.; 124°E-150°W & 15°N-61.5°N  | MPIC, [public](https://doi.org/10.26023/BN0Z-CHGG-PD0B) | creation: 2023-03-24  | v1 | [Oliver Eppers](o.eppers@mpic.de)  |ERICA-LAMS in-situ data obtained from the [Asian Summer Monsoon Chemical & CLimate Impact Project (ACCLIP) mission](https://www.eol.ucar.edu/field_projects/acclip) |
-| A05        |           |      |        |          |              |                    |         |         | |
+| A05        | UHPLC-HRMS | obs. data | ascii  | 2024/06/07-2024/06/20; 0-12 km alt.; Northern Germany, Southern Scandinavia | GUF, [zenodo](10.5281/zenodo.15680609) | 2025-07-01 | v1 | [Alexander Vogel](vogel@iau.uni-frankfurt.de)         | filter measurements during TPex, associated with [Breuniger et al., 2025](https://doi.org/10.5194/egusphere-2025-3129) |
 | A06        |           |      |        |          |              |                    |         |         | |
 | A07        |           |      |        |          |              |                    |         |         | |
 |            |           |      |        |          |              |                    |         |         | |
@@ -31,10 +31,12 @@
 | B02        | BISTUM23 Balloon   | obs. data  | ascii (csv)   | 2023/08/04-2023/08/17, Tailfingen, Germany | JGU-IPA, [gitlab](https://gitlab.rlp.net/tpchange/research-area-b/b02/balloncampaign_2023) | 2023/03/21 | final | [Luis Valero Tuya](luistuya@uni-mainz.de) | |
 | B02        | BISTUM24 Balloon   | obs. data  | ascii (csv)   | 2024/06/07-2024/06/21, Spielberg, Germany | JGU-IPA, N/A | 2024/08/03 | preliminary | [Luis Valero Tuya](luistuya@uni-mainz.de) | |
 | B02        | BISTUM23_MoLa | obs. data | ascii | 2023/08/01-2023/08/18, Taiflingen, Germany | MPIC, [zenodo](https://doi.org/10.5281/zenodo.14748149)   |  2024/08/18 |  final, v1 |  [Lasse Moormann](lasse.moormann@mpic.de)  | Associated with a publication: [Moormann et al. 2024](https://amt.copernicus.org/articles/18/1441/2025/)  |
+| B02        | UCASS samples | obs. data, software | ascii, python | - | [zenodo](https://doi.org/10.5281/zenodo.15519552) | 2025-05-26 | v1 | [Sina Jost](sjost@students.uni-mainz.de) | Associated with publication: [Jost et al., 2025](https://doi.org/10.5194/egusphere-2025-451) | 
 | B03        |           |      |        |          |              |                    |         |         | |
 | B04        |           |      |        |          |              |                    |         |         | |
 | B06        |           |      |        |          |              |                    |         |         | |
-| B07        |           |      |        |          |              |                    |         |         | |
+| B07        | Parcel model  | model, software  | fortran, python  | -         | [zenodo](10.5281/zenodo.14244118)     | 2025-05-08  | v1.1   | [Alena Kosareva](kosareva@iau.uni-frankfurt.de)  | Associated with publication [Kosareva et a., 2025](https://doi.org/10.5194/gmd-2024-193) |
+| B07        | Homo. Ice Nuc  | model, software  | netCDF, python  | various         | [zenodo](10.5281/zenodo.13819510)     | 2024-09-20  | v1.0   | [Alena Kosareva](kosareva@iau.uni-frankfurt.de)  | Associated with publication [Kosareva et a., 2025](https://doi.org/10.5194/gmd-2024-193) |
 | B08        |           |      |        |          |              |                    |         |         | |
 |            |           |      |        |          |              |                    |         |         | |
 | C01        |           |      |        |          |              |                    |         |         | |
@@ -56,5 +58,6 @@
 | C07        |           |      |        |          |              |                    |         |         | |
 |            |           |      |        |          |              |                    |         |         | |
 | Z01        |  TPEx - Merged data set  | obs./mod. data   | netCDF  | 2024/06/10-2024/06/21 , TPex area | [zenodo](https://doi.org/10.5281/zenodo.15371527) | 2025/05/09 | v1  | [Hans-Christoph Lachnitt](hlachnit@uni-mainz.de) | |
+| Z01        |  Consistent meteorological (ERA5) and chemical (CLaMS) information across airborne measurements over the globe between 1997 and 2023  | model | netCDF  | 1997 - 2023, global| [zenodo](https://doi.org/10.5281/zenodo.15076520) | 2025-04-14 | v1  | [Hans-Christoph Lachnitt](hlachnit@uni-mainz.de) | 50 individual data sets |
 | Z02        |           |      |        |          |              |                    |         |         | |
 | Z03        |           |      |        |          |              |                    |         |         | |
